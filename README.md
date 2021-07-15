@@ -1,70 +1,68 @@
-# 01-code-refactor
+# portfolio
 
 ## Description
 
-This repo is homework1 where the learning is about:
-1) making web pages & their content more SEO friendly, that is optimized for search engines;
-2) adhering to accessibility standards.
+This repo is homework2 where the exercise was to start building our porfolio.
 
 ## Table of Contents
 
 - [Acceptance Criteria](#acceptance)
 - [Deployed Application](#deployed)
-- [Good Resource on Semantics](#resource)
 - [Assets](#assets)
 - [Credits](#credits)
 
 ## Acceptance Criteria
 
-* It's done when all the generic div's are replaced with suitable semantic tags. 
 
-* It's done when selectors and properties are consolidated per the semantic tags updates.
+GIVEN I need to sample a potential employee's previous work
 
-* It's done when elements follow logical structure and only CSS is used to style and position the elements.
+WHEN I load their portfolio
 
-* It's done when the CSS file has informative comments. 
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 
-* It's done when heading attributes are in sequential order.
 
-* It's done when all links function properly.
+WHEN I click one of the links in the navigation
 
-* It's done when all image elements have accessible alt attributes.
+THEN the UI scrolls to the corresponding section
 
-* It's done when the title element has a consise and descriptive title.
+WHEN I click on the link to the section about their work
 
-* It's done when the original page design layout hasn't changed and still looks the same after the semantics tags have been applied.
+THEN the UI scrolls to a section with titled images of the developer's applications
+
+WHEN I am presented with the developer's first application
+
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+
+THEN I am taken to that deployed application
+
+WHEN I resize the page or view the site on various screens and devices
+
+THEN I am presented with a responsive layout that adapts to my viewport
+
 
 ## Deployed Application
 
-[You may see the deployed application here](https://csalhab.github.io/01-code-refactor/)
+[You may see the deployed application here](https://csalhab.github.io/portfolio//)
 
-## Good Resource on Semantics:
-https://www.w3schools.com/html/html5_semantic_elements.asp
 
 ## Assets:
 
-The following image demonstrates the original page design layout before changes were applied:
+The following gif demos a guidance on design:
 
-[Original Mockup](./assets/images/horiseonpageimage.jpg)
+[Demo Animation](./assets/images/02-advanced-css-homework-demo.gif)
 
 ## Credits:
 
-Shout out to Professor Ben for coding the original html and css and teaching us best practices beside all the technologies used.
+Big thanks to classmates James, Rachel, Gospel, Zana & Anne for attending a cohort call where they help not just myself but each others and many contributions were made!!  Thanks, buddies!!
 
-Following tutorials/resources were leveraged:
+Helpful resources:
 
-- https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+- https://flexboxfroggy.com/
 
-- https://www.w3schools.com/html/html5_semantic_elements.asp
-
-- https://css-tricks.com/
-
-- https://meyerweb.com/eric/tools/css/reset/
-
-- https://www.w3schools.com/cssref/default.asp
-
-- https://www.youtube.com/watch?v=yfoY53QXEnI&t=3439s
+- https://developer.mozilla.org/en-US/docs/Web/CSS 
 
 

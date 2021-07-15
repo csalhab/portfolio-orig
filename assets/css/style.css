@@ -1,7 +1,11 @@
-body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
+:root {
+  --base-font-size: 16px;
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -11,27 +15,36 @@ header {
   padding: 1%;
   background-color: #13293d;
   color: #fff;
+  height: 150px;
 }
 
 h1 {
-  font-size: 200%;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  /* shorthand is: 10px padding applied to top, right & bottom; left has 50px padding */
+  padding: 10px 50px;
+  color: #13293d;
+  background-color: #82C2C1;
 }
 
 h2 {
-  margin: 2% 0;
-  font-size: 250%;
+  /* shorthand is: top & bottom are 2%; right & left are 0 */
+  margin: auto;
+  font-size: 2.5rem;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
-  min-width: 300px;
+  justify-content:space-between;
+  min-width: 500px;
+  margin-inline-end: 50px;
 }
 
 nav a {
-  color: #b9C6ae;
+  color: #82C2C1;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 1.75rem;
+  text-decoration: underline;
 }
 
 nav a:hover {
@@ -40,119 +53,157 @@ nav a:hover {
 
 main {
   display: flex;
-  flex: 1 1 0;
+  flex-direction: column;
   max-width: 1200px;
   margin: 2% auto;
+  border-color: springgreen;
 }
 
 .hero {
-  height: 800px;
+  height: 350px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   /* image is a jpg found in the images folder */
   background-image: url("../images/hero-java-code.jpeg");
   background-size: cover;
   background-position: center;
 }
 
-.claudia-photo-cropperXXX {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+.heroSWE {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-color: seagreen;
 }
 
-.claudia-profile-picXXX {
-  display: inline;
-  margin: 0 auto;
-  /* centers the image */
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-.claudia-profile-pic-cropping {
-  border-radius: 50%;
-  display: inline;
-  height: 50%;
-  width: 50%;
+.SWE {
+  position: relative;
+  top: -100px;
+  margin-inline-end: 75px;
+  /* shorthand is: 10px padding applied to top, right & bottom; left has 50px padding */
+  padding: 5px 50px;
+  color: #13293d;
+  background-color: #82C2C1;
 }
 
 section {
-  flex: 1 1 0;
-  padding-right: 5%;
-}
-
-article {
-  border-bottom: 1px solid #d8a47f;
-}
-
-article p {
-  margin: 2% 0;
-  font-size: 110%;
-}
-
-article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
-}
-
-aside {
-  width: 25%;
-}
-
-aside h2 {
-  font-size: 150%;
-}
-
-input, button {
-  width: 100%;
-  margin: 2% 0;
-  padding: 1%;
-}
-
-footer {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding: 2%;
-  background-color: #13293d;
-  color: #fff;
+  width: fit-content;
 }
 
-/* TODO: Add styles to display and hide the resource links */
-
-@media screen and (max-width: 768px) {
-  header, main {
-    flex-direction: column;
-  }
-
-  section {
-    padding-right: 0;
-  }
-
-  aside {
-    width: 100%;
-    text-align: center;
-  }
+section h2 {
+  width: 200px;
+  color: #13293d;
 }
 
-.resources ul {
-  display: none;
-  
+#sidebarTitle h2 {
+  padding-left: 10px;
+  width: 400px;
 }
 
-.resources:hover > ul {
-  display: block;
+#about-me p {
+  padding-top: 15px;
+  padding-left: 10px;
+  width: 600px;
+}
+
+.profile-pic {
+  display: inline;
+  width: 270px;
+  height: 290px;
+  margin: 30px;
 }
 
 .line-separator {
+  display: inline;
   border-left: 5px solid #344664;
-  height: 300px;
+  height: 470px;
+}
+
+.main-work-item {
+  padding-left: 20px;
+}
+
+.main-work-item h2 {
+  background-color: #13293d;
+  color: #fff;
+  padding: 3%;
+  position: relative;
+  top: 30px;
+  width: 270px;
+  box-shadow: 7px 7px #888888;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.work-item h2 {
+     /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 5%;
+    background-color: #13293d;
+    color: #fff;
+    /* height: 150px; */
+    position: relative;
+    top: 30px;
+    width: 270px;
+    box-shadow: 7px 7px #888888;
 }
 
 .work-item img {
-  width: 200px;
-  height: 200px;
+  width: 430px;
+  height: 240px;
 }
+
+#contact p {
+  padding: 30px;
+}
+
+#resume p {
+  padding: 30px;
+}
+
+/* tablets smartphones */
+@media screen and (max-width: 992px) {
+    nav ul {
+      background-color: #17a845;
+    }
+
+}
+
+/* large smartphones */
+@media screen and (max-width: 768px) {
+  /*header, main {*/
+  body {
+    background-color: #555555;
+    /*flex-direction: column;*/
+  }
+
+/* small smartphones */
+@media screen and (max-width: 576px) {
+
+}
+
+  section {
+    /*padding-right: 0;*/
+  }
+
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  padding-top: 20px;
+}
+
 
